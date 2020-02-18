@@ -8,12 +8,15 @@ export const handleApiError = (response) => {
     return response
 }
 
-export const handleTabs = (arr, song, artist, tab) => {
-    let tabsLink = 'http://www.songsterr.com/a/wa/bestMatchForQueryString?';
-    return arr.map((tabType, index) => 
-    <div className={tab === tabType ? "tab purple" : "tab"} key={index}><a target="_blank" rel="noopener noreferrer" href={tabsLink + `s=${song.replace(' ', '+')}&a=
-    ${artist.replace(' ', '+')}&inst=${tabType}`}>  
-    {'  ' + tabType.replace('TEXT_', '').replace('_TAB', '') + '  '}  
-    </a></div>
+export const handleTabs = (tabTypes, song, artist, tab) => {
+    let tabsLink = `http://www.songsterr.com/a/wa/bestMatchForQueryString?s=${song.replace(' ', '+')}&a=
+    ${artist.replace(' ', '+')}`;
+    return tabTypes.map((tabType, index) => {
+        let formattedTabType = tabType.replace('TEXT_', '').replace('_TAB', '').toLowerCase();
+        return (
+            <div className={tab === tabType ? "tab highlight" : "tab"} key={index}>
+                <a target="_blank" rel="noopener noreferrer" href={tabsLink + `&inst=${formattedTabType}`}>{'  ' + formattedTabType + '  '}</a>
+            </div>)
+    }
     )
 }
