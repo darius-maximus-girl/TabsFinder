@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/TabsFinder/static/css/main.f9097f91.chunk.css",
+    "main.js": "/TabsFinder/static/js/main.8e27c794.chunk.js",
+    "main.js.map": "/TabsFinder/static/js/main.8e27c794.chunk.js.map",
+    "runtime-main.js": "/TabsFinder/static/js/runtime-main.41c241a7.js",
+    "runtime-main.js.map": "/TabsFinder/static/js/runtime-main.41c241a7.js.map",
+    "static/js/2.60db6cb3.chunk.js": "/TabsFinder/static/js/2.60db6cb3.chunk.js",
+    "static/js/2.60db6cb3.chunk.js.map": "/TabsFinder/static/js/2.60db6cb3.chunk.js.map",
+    "index.html": "/TabsFinder/index.html",
+    "precache-manifest.822fb295ed3b886c82399bc5e8f6fdae.js": "/TabsFinder/precache-manifest.822fb295ed3b886c82399bc5e8f6fdae.js",
+    "service-worker.js": "/TabsFinder/service-worker.js",
+    "static/css/main.f9097f91.chunk.css.map": "/TabsFinder/static/css/main.f9097f91.chunk.css.map",
+    "static/js/2.60db6cb3.chunk.js.LICENSE.txt": "/TabsFinder/static/js/2.60db6cb3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.41c241a7.js",
+    "static/js/2.60db6cb3.chunk.js",
+    "static/css/main.f9097f91.chunk.css",
+    "static/js/main.8e27c794.chunk.js"
+  ]
+}
