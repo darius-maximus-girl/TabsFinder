@@ -1,11 +1,10 @@
 .form-container {
-  background-color: $main-theme;
-  box-shadow: $box-shadow-blurred;
+  // background-color: $main-theme;
+  background: $transparent;
+  box-shadow: $box-shadow-strong;
   height: 100%;
   width: 100%;
   max-width: 850px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
   color: $light;
 
   @media #{$mid} {
@@ -13,6 +12,8 @@
     width: 90%;
     min-height: 600px;
     max-height: 620px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
   @media #{$xxlarge} {

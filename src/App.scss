@@ -5,13 +5,11 @@ body {
   padding: 0;
   box-sizing: border-box;
   height: 100vh;
-  background-image: $main-theme;
-  // background-image: url('./assets/images/1.jpg');
+  background-image: url("./assets/images/sky.jpg");
   background-size: cover;
 }
 
 html {
-  // --scrollbarBG: rgba(185, 165, 184, 0);
   --thumbBG: rgb(175, 123, 196);
 }
 
@@ -62,6 +60,16 @@ a {
   &:hover {
     box-shadow: $box-shadow;
     background: $light;
+  }
+
+  @media #{$small} {
+    bottom: 5px;
+    right: 5px;
+  }
+
+  @media #{$large} {
+    bottom: 20px;
+    right: 20px;
   }
 
   img {
