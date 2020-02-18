@@ -1,6 +1,6 @@
 import React from 'react';
 import { handleTabs } from './helperFunctions';
-import Deezer from '../assets/images/icons8-deezer-48.png';
+import Deezer from '../assets/images/icons8-deezer-64.png';
 
 const ResultsList = ({ results, tab }) => {
 
