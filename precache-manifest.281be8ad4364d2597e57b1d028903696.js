@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bff71895b0437df59d09ff1d7ff30473",
+    "revision": "d08a555049e2ad1c149503dbe7559c1b",
     "url": "/TabsFinder/index.html"
   },
   {
-    "revision": "fb7bbf3f77a2df20a53d",
+    "revision": "f8f6d382302bf30803bb",
     "url": "/TabsFinder/static/css/main.f9097f91.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TabsFinder/static/js/2.60db6cb3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fb7bbf3f77a2df20a53d",
-    "url": "/TabsFinder/static/js/main.8e27c794.chunk.js"
+    "revision": "f8f6d382302bf30803bb",
+    "url": "/TabsFinder/static/js/main.720b52ee.chunk.js"
   },
   {
     "revision": "e10ebde830ccaa2f7bf9",
