@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/TabsFinder/static/css/main.63de5829.chunk.css",
+    "main.css": "/TabsFinder/static/css/main.81756b63.chunk.css",
     "main.js": "/TabsFinder/static/js/main.720b52ee.chunk.js",
     "main.js.map": "/TabsFinder/static/js/main.720b52ee.chunk.js.map",
     "runtime-main.js": "/TabsFinder/static/js/runtime-main.41c241a7.js",
@@ -8,15 +8,15 @@
     "static/js/2.60db6cb3.chunk.js": "/TabsFinder/static/js/2.60db6cb3.chunk.js",
     "static/js/2.60db6cb3.chunk.js.map": "/TabsFinder/static/js/2.60db6cb3.chunk.js.map",
     "index.html": "/TabsFinder/index.html",
-    "precache-manifest.78fb7be296d67052057789719344be32.js": "/TabsFinder/precache-manifest.78fb7be296d67052057789719344be32.js",
+    "precache-manifest.ff4ec7bbb57824cda59908a4fa7e1eda.js": "/TabsFinder/precache-manifest.ff4ec7bbb57824cda59908a4fa7e1eda.js",
     "service-worker.js": "/TabsFinder/service-worker.js",
-    "static/css/main.63de5829.chunk.css.map": "/TabsFinder/static/css/main.63de5829.chunk.css.map",
+    "static/css/main.81756b63.chunk.css.map": "/TabsFinder/static/css/main.81756b63.chunk.css.map",
     "static/js/2.60db6cb3.chunk.js.LICENSE.txt": "/TabsFinder/static/js/2.60db6cb3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.41c241a7.js",
     "static/js/2.60db6cb3.chunk.js",
-    "static/css/main.63de5829.chunk.css",
+    "static/css/main.81756b63.chunk.css",
     "static/js/main.720b52ee.chunk.js"
   ]
 }
