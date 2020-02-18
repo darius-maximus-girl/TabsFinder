@@ -2,10 +2,8 @@
   // background-color: $form;
   background-color: $main-theme;
   box-shadow: $box-shadow-blurred;
-  height: 90%;
-  min-height: 600px;
-  max-height: 620px;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   max-width: 850px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -13,6 +11,9 @@
 
   @media #{$mid} {
     height: 85%;
+    width: 90%;
+    min-height: 600px;
+    max-height: 620px;
   }
 
   @media #{$xxlarge} {
