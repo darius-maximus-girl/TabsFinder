@@ -40,7 +40,7 @@
       background: inherit;
       margin-right: 10px;
       letter-spacing: 1.5px;
-      font-family: "Montserrat", sans-serif;
+      font-family: $primary-font;
       transform: 10s;
 
       @media #{$xsmall} {
@@ -67,7 +67,7 @@
       margin-top: 10px;
       border: 1px solid $border;
       color: $border;
-      font-family: "Montserrat", sans-serif;
+      font-family: $primary-font;
       background: inherit;
       letter-spacing: 1.5px;
       cursor: pointer;

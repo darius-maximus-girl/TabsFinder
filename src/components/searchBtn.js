@@ -30,20 +30,20 @@ const SearchBtn = ({ songOrArtist, tab, resetSongOrArtist }) => {
         return fetch(api + `${songOrArtist}`)
             .then(handleApiError)
             .then(response => response.json())
-            .then(response => {
-                if (response.length < 1) {
+            .then(songs => {
+                if (songs.length < 1) {
                     handleNoResults();
                     resetSongOrArtist();
                 } else {
                     resetSongOrArtist();
-                    let newResponse = response.filter(el => {
-                        return el.tabTypes.includes(tab)
-                    })
-                    if (newResponse.length < 1) {
+                    let filteredSongs = songs.filter(song =>
+                        song.tabTypes.includes(tab)
+                    )
+                    if (filteredSongs.length < 1) {
                         setNoResultsMessage(message);
                         setLoader(false);
                     } else {
-                        setResults(newResponse);
+                        setResults(filteredSongs);
                         setNoResultsMessage('');
                         setLoader(false);
                     }
