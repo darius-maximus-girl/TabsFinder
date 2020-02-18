@@ -7,7 +7,7 @@ const ValidPopup = ({ hidePopup }) => {
         <div className="popup-container" onClick={() => hidePopup(false)}>
             <div className="popup">
                 <img src={CloseBtn} alt="close button"></img>
-                <p className="message">Please, complete the input field :-P</p>
+                <p className="message">Please, complete the input field :-)</p>
                 <HeartSpinner size={40} color="#cfc8ee" loading={true} />
             </div>
         </div>
