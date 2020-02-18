@@ -1,0 +1,49 @@
+@import "./styles/exportStyles";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: $main-theme;
+  // background-image: url('./assets/images/1.jpg');
+  background-size: cover;
+}
+
+html {
+  // --scrollbarBG: rgba(185, 165, 184, 0);
+  --thumbBG: rgb(175, 123, 196);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90vw;
+  height: 100%;
+}

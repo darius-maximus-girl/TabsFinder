@@ -1,0 +1,26 @@
+/* Media queries */
+$xsmall: "screen and (max-width: 575px)";
+$small: "screen and (min-width: 576px)";
+$mid: "screen and (min-width: 768px)";
+$large: "screen and (min-width: 992px)";
+$xlarge: "screen and (min-width: 1200px)";
+$xxlarge: "screen and (min-width: 1600px)";
+
+/* Colors */
+$main-theme: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+$light: white;
+$transparent-white: rgba(255, 255, 255, 0.1);
+$darker-light: #d6d3d3;
+$popupBackground: rgba(175, 123, 196, .8);
+$card-header-font: #977ca7;
+$card-header: #dbc8ed;
+$font-color:#808080;
+$box-shadow: 0px 2px 22px 2px #8582829e;
+$box-shadow-blurred: 0px 2px 22px -6px #8885859e;
+$card-background: linear-gradient(to top, #e9f3ed 0%, white 100%);
+$border: #800080;
+$hover-highlight: rgba(172, 27, 216, 0.2);
+$form: rgba(250, 245, 245, 0.115);
+$form-header: rgb(182, 190, 231);
+
+

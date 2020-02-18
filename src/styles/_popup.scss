@@ -1,0 +1,57 @@
+.popup-container {
+  position: fixed;
+  background: $popupBackground;
+  color: $light;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media #{$xsmall} {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  @media #{$small} {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: $box-shadow;
+  }
+
+  .popup {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .message {
+      margin-bottom: 20px;
+      width: 200px;
+      text-align: center;
+      line-height: 25px;
+      letter-spacing: 2px;
+    }
+
+    img {
+      position: absolute;
+      top: -118px;
+      right: -95px;
+      cursor: pointer;
+      border-radius: 50%;
+      background: $popupBackground;
+
+      @media #{$xsmall} {
+        top: -214px;
+        right: -42px;
+      }
+    }
+  }
+}

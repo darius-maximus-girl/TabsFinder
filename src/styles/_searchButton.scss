@@ -1,0 +1,52 @@
+.search-btn {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  border: 2px solid $light;
+  color: $light;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  position: relative;
+
+  &:hover {
+    background-color: $transparent-white;
+    letter-spacing: 4px;
+  }
+
+  @media #{$mid} {
+    letter-spacing: 4px;
+
+    &::after {
+      content: url("../assets/images/icons8-search-30.png");
+      position: absolute;
+      opacity: 0;
+      top: 20px;
+      right: -5px;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      background-color: $transparent-white;
+      letter-spacing: 2px;
+      padding-right: 24px;
+      padding-left: 8px;
+      letter-spacing: 2px;
+    }
+
+    &:hover:after {
+      opacity: 1;
+      right: 40px;
+    }
+  }
+
+  @media #{$mid} {
+    width: 250px;
+    height: 70px;
+  }
+}

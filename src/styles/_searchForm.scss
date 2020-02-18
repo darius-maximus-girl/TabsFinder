@@ -1,0 +1,111 @@
+.form-container {
+  // background-color: $form;
+  background-color: $main-theme;
+  box-shadow: $box-shadow-blurred;
+  height: 90%;
+  min-height: 600px;
+  max-height: 620px;
+  width: 90%;
+  max-width: 850px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: $light;
+
+  @media #{$mid} {
+    height: 85%;
+  }
+
+  @media #{$xxlarge} {
+    max-width: 1200px;
+  }
+
+  &__item {
+    background-color: $form-header;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media #{$xsmall} {
+      flex-direction: column;
+    }
+
+    .user-input {
+      height: 40px;
+      width: 300px;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid $border;
+      color: $border;
+      background: inherit;
+      margin-right: 10px;
+      letter-spacing: 1.5px;
+      font-family: "Montserrat", sans-serif;
+      transform: 10s;
+
+      @media #{$xsmall} {
+        width: 88%;
+        margin-right: 0;
+        font-size: 10px;
+        letter-spacing: 0.2px;
+      }
+
+      &::placeholder {
+        color: $border;
+        letter-spacing: 1.5px;
+      }
+
+      &:focus,
+      &:hover {
+        background: $hover-highlight;
+      }
+    }
+
+    .user-select {
+      height: 40px;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid $border;
+      color: $border;
+      font-family: "Montserrat", sans-serif;
+      background: inherit;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+      box-shadow: none;
+
+      @media #{$xsmall} {
+        width: 50%;
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+    }
+
+    &--transparent {
+      background-color: unset;
+      flex-direction: column;
+      height: auto;
+      margin-top: 30px;
+
+      .no-results {
+        width: 80%;
+        font-size: 13px;
+        letter-spacing: 2px;
+        line-height: 25px;
+        text-align: center;
+
+        @media #{$small} {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.purple {
+  background-color: $hover-highlight;
+}
+
+.spinner {
+  height: 50px;
+}
+

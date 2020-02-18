@@ -1,0 +1,120 @@
+.results-container {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  height: 308px;
+  padding: 20px;
+  overflow-y: scroll;
+
+  @media #{$xlarge} {
+    margin-top: 30px;
+  }
+
+  .results-card {
+    background-image: $card-background;
+    height: 230px;
+    width: 200px;
+    list-style-type: none;
+    margin: 28px 10px;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+
+    &__artist {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: $card-header-font;
+      background: $card-header;
+      height: 70px;
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 0 10px;
+      border-radius: 5px 5px 0px 0px;
+    }
+
+    &__title {
+      display: flex;
+      align-items: center;
+      color: $font-color;
+      margin: 20px;
+      text-align: center;
+      height: 45px;
+
+      img {
+          width: 45px;
+          margin-right: 10px;
+      }
+
+      .song {
+        max-width: 160px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+      }
+    }
+
+    &__tabtypes {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      .tab {
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 12px;
+        height: 20px;
+        width: 60px;
+        // background: white;
+        border: 1px solid $border;
+        margin: 5px;
+        padding: 1px;
+        cursor: pointer;
+        transform: 0.7s;
+
+        &:hover {
+          background-color: $hover-highlight;
+        }
+
+        a {
+          color: $border;
+        }
+      }
+    }
+
+    .line {
+      background: $darker-light;
+      height: 1px;
+      width: 90%;
+      margin: 5px;
+    }
+  }
+}
+
+.results-container {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.results-container::-webkit-scrollbar {
+  width: 11px;
+}
+
+.results-container::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+.results-container::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
