@@ -9,10 +9,10 @@ export const handleApiError = (response) => {
 }
 
 export const handleTabs = (tabTypes, song, artist, tab) => {
-    let tabsLink = `http://www.songsterr.com/a/wa/bestMatchForQueryString?s=${song.replace(' ', '+')}&a=
+    const tabsLink = `http://www.songsterr.com/a/wa/bestMatchForQueryString?s=${song.replace(' ', '+')}&a=
     ${artist.replace(' ', '+')}`;
     return tabTypes.map((tabType, index) => {
-        let formattedTabType = tabType.replace('TEXT_', '').replace('_TAB', '').toLowerCase();
+        const formattedTabType = tabType.replace('TEXT_', '').replace('_TAB', '').toLowerCase();
         return (
             <div className={tab === tabType ? "tab highlight" : "tab"} key={index}>
                 <a target="_blank" rel="noopener noreferrer" href={tabsLink + `&inst=${formattedTabType}`}>{'  ' + formattedTabType + '  '}</a>

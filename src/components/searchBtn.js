@@ -4,8 +4,8 @@ import { handleApiError } from './helperFunctions';
 import ValidPopup from './validPopup';
 import Spinner from './spinner';
 
-let api = 'https://www.songsterr.com/a/ra/songs.json?pattern=';
-let message = 'Sorry, no results found. Try again!'
+const api = 'https://www.songsterr.com/a/ra/songs.json?pattern=';
+const message = 'Sorry, no results found. Try again!';
 
 const SearchBtn = ({ songOrArtist, tab, resetSongOrArtist }) => {
 
@@ -13,8 +13,6 @@ const SearchBtn = ({ songOrArtist, tab, resetSongOrArtist }) => {
     const [noResultsMessage, setNoResultsMessage] = useState('');
     const [loader, setLoader] = useState(false);
     const [showPopup, setPopup] = useState(false);
-
-
 
     const handleNoResults = () => {
         setLoader(false);
