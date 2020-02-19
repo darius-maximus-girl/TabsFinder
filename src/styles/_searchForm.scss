@@ -31,6 +31,10 @@
       flex-direction: column;
     }
 
+    @media #{$large} {
+      background-color: transparent;
+    }
+
     .user-input {
       height: 40px;
       width: 300px;
